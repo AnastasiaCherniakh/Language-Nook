@@ -1,0 +1,61 @@
+@use 'globals' as *;
+.form-input {
+    background-color: $white;
+    box-shadow: 20px 20px 40px $yellow;
+    border-radius: 1em;
+    padding: 2em;
+    width: rem(350);
+    height: rem(470);
+    margin-bottom: rem(50);
+
+    @include breakpoint-up(medium) {
+        width: rem(600);
+    }
+}
+
+h1 {
+    margin-bottom: rem(30);
+    line-height: 1;
+}
+
+.form__group {
+    display: flex;
+    justify-content: flex-end;
+    > label {
+        padding: rem(29) rem(18) rem(29) 0;
+        flex: 1;
+        text-align: left;
+    }
+
+    >input {
+        flex: 2;
+        width: rem(30);
+        height: rem(40);
+        font-family: $font;
+        font-weight: 600;
+        color: $black;
+        border-radius: 10px;
+        border: 1px solid $grey;
+        margin: rem(16);
+
+        &:focus {
+            outline: none !important;
+            border:1px solid $purple;
+            box-shadow: 0 0 10px $purple;
+        }
+    }
+
+}
+
+.form__image {
+    background-image: url(../images/colored_shapes.svg);
+}
+
+.btn {
+    margin-top: rem(8);
+    margin-left: rem(40);
+    @include breakpoint-up(medium) {
+        margin-left: rem(183);
+    }
+}
+

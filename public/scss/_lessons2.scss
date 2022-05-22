@@ -14,6 +14,7 @@
         background-repeat: no-repeat;
         background-position: center center;
         background-size: 80%;
+        margin-bottom: rem(30);
 
         @include breakpoint-down(small) {
             min-height: 20rem;

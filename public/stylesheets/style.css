@@ -48,9 +48,9 @@ body {
   margin: 0 auto;
 }
 .container--pall {
-  padding-top: 2.5rem;
+  padding-top: 3.5rem;
   padding-right: 1.5rem;
-  padding-bottom: 2.5rem;
+  padding-bottom: 3.5rem;
   padding-left: 1.5rem;
 }
 @media (min-width: 56.25rem) {
@@ -60,8 +60,8 @@ body {
   }
 }
 .container--py {
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
 }
 @media (min-width: 56.25rem) {
   .container--py {
@@ -74,7 +74,7 @@ body {
   padding-left: 1.5rem;
 }
 .container--pt {
-  padding-top: 2.5rem;
+  padding-top: 3.5rem;
 }
 @media (min-width: 56.25rem) {
   .container--pt {
@@ -85,7 +85,7 @@ body {
   padding-right: 1.5rem;
 }
 .container--pb {
-  padding-bottom: 2.5rem;
+  padding-bottom: 3.5rem;
 }
 @media (min-width: 56.25rem) {
   .container--pb {
@@ -125,7 +125,7 @@ button, .button {
 }
 button:hover, .button:hover {
   color: hsl(0deg, 0%, 100%);
-  box-shadow: 0 5px 15px hsla(275deg, 55%, 25%, 0.4);
+  box-shadow: 0 15px 15px hsla(275deg, 89%, 22%, 0.4);
 }
 
 @media (max-width: 56.24875rem) {
@@ -465,6 +465,7 @@ button:hover, .button:hover {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 80%;
+  margin-bottom: 1.875rem;
 }
 @media (max-width: 43.74875rem) {
   .lessons2__image {
@@ -514,4 +515,64 @@ button:hover, .button:hover {
 }
 .lessons2__text p:not(:last-child) {
   margin-bottom: 2rem;
+}
+
+.form-input {
+  background-color: hsl(0deg, 0%, 100%);
+  box-shadow: 20px 20px 40px hsl(52deg, 85%, 50%);
+  border-radius: 1em;
+  padding: 2em;
+  width: 21.875rem;
+  height: 29.375rem;
+  margin-bottom: 3.125rem;
+}
+@media (min-width: 43.75rem) {
+  .form-input {
+    width: 37.5rem;
+  }
+}
+
+h1 {
+  margin-bottom: 1.875rem;
+  line-height: 1;
+}
+
+.form__group {
+  display: flex;
+  justify-content: flex-end;
+}
+.form__group > label {
+  padding: 1.8125rem 1.125rem 1.8125rem 0;
+  flex: 1;
+  text-align: left;
+}
+.form__group > input {
+  flex: 2;
+  width: 1.875rem;
+  height: 2.5rem;
+  font-family: "Comfortaa", cursive;
+  font-weight: 600;
+  color: hsl(0deg, 0%, 0%);
+  border-radius: 10px;
+  border: 1px solid hsl(0deg, 0%, 50%);
+  margin: 1rem;
+}
+.form__group > input:focus {
+  outline: none !important;
+  border: 1px solid hsl(264deg, 38%, 44%);
+  box-shadow: 0 0 10px hsl(264deg, 38%, 44%);
+}
+
+.form__image {
+  background-image: url(../images/colored_shapes.svg);
+}
+
+.btn {
+  margin-top: 0.5rem;
+  margin-left: 2.5rem;
+}
+@media (min-width: 43.75rem) {
+  .btn {
+    margin-left: 11.4375rem;
+  }
 }/*# sourceMappingURL=style.css.map */
