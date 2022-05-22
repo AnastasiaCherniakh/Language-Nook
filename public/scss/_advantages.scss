@@ -1,0 +1,67 @@
+@use 'globals' as *;
+
+.advantages {
+
+    text-align: center;
+
+    @include breakpoint-up(medium) {
+        text-align: left;
+    }
+}
+
+.advantage {
+
+    &__intro {
+        margin-bottom: rem(50);
+
+        @include breakpoint-up(large) {
+            width: 60%;
+        }
+    }
+
+    &__grid {
+
+        @include breakpoint-up(medium) {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+    }
+
+    &__item {
+        padding: rem(15);
+
+        @include breakpoint-up(medium) {
+            flex: 0 0 50%;
+        }
+
+        @include breakpoint-up(large) {
+            flex: 1;
+        }
+
+    }
+
+    &__icon {
+        margin-bottom: rem(30);
+
+
+        @include breakpoint-up(large) {
+            margin-bottom: rem(40);
+        }
+
+    }
+
+    &__title {
+        font-size: rem(18);
+        margin-bottom: rem(19);
+        font-weight: 600;
+
+        @include breakpoint-up(large) {
+            margin-bottom: rem(24);
+        }
+    }
+
+    &__description {
+        line-height: 1.5rem;
+    }
+}

@@ -1,0 +1,52 @@
+@use 'globals' as *;
+
+.school-title {
+
+    @include breakpoint-up(large) {
+        display: flex;
+        align-items: center;
+    }
+
+    &__image {
+        background-image: url(../images/school-title-image.svg);
+        background-size: 90%;
+        height: 100%;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-position: center center;
+        min-height: 27rem;
+
+        @include breakpoint-down(small) {
+            min-height: 19rem;
+        }
+
+        @include breakpoint-up(large) {
+            flex: 2;
+            order:2;
+            height: rem(500);
+            background-size: 90%;
+        }
+
+    }
+
+    &__text {
+        text-align: center;
+
+        @include breakpoint-up(large) {
+            flex: 2;
+            order:1;
+            text-align: left;
+        }
+        h1 {
+            font-weight: 550;
+            line-height: 1;
+            margin-bottom: 1.5rem;
+        }
+
+        p {
+            line-height: 1.5;
+            margin-bottom: 2.25rem;
+        }
+
+    }
+}
