@@ -23,19 +23,17 @@
             </a>
 
             <div class="header__links hide-for-mobile">
-                <a href="#">Online навчання</a>
-                <a href="#">Вартість</a>
-                <a href="#">Про нас</a>
-                <a href="#">Наші контакти</a>
+                <a href="#about">Про нас</a>
+                <a href="#program">Програми</a>
+                <a href="#start-learning">Почніть online навчання</a>
+                <a href="#contact">Наші контакти</a>
             </div>
-
-            <button class="hide-for-mobile" type="button">Зв'яжіться з нами</button>
         </nav>
         <div class="header__mob_links faded">
-            <a href="#">Online навчання</a>
-            <a href="#">Вартість</a>
-            <a href="#">Про нас</a>
-            <a href="#">Наші контакти</a>
+            <a href="#about">Про нас</a>
+            <a href="#program">Програми</a>
+            <a href="#start-learning">Почніть навчання</a>
+            <a href="#contact">Наші контакти</a>
         </div>
     </header>
     <section class="school-title container">
@@ -47,7 +45,7 @@
     </section>
     <section class="advantages container container--pall">
         <div class="advantage__intro">
-            <h2>Чому варто обрати нашу школу?</h2>
+            <h2 id="about">Чому варто обрати нашу школу?</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos ea in iusto quidem eius, alias blanditiis rerum, hic.</p>
         </div>
         <div class="advantage__grid">
@@ -99,11 +97,32 @@
     </section>
     <section class="lessons container">
         <div class="lessons__text container--pall">
-            <h2>Для дорослих і студентів</h2>
+            <h2 id="program">Для дорослих і студентів</h2>
             <p>Уроки для дорослих і студентів. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime rem deleniti, cum nobis neque aliquam quaerat. Dolore rerum error quo sequi?</p>
-            <p> - Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
-            <p> - Lorem ipsum dolor sit amet consectetur adipisicing elit </p>
-            <p> - Lorem ipsum dolor sit amet consectetur adipisicing elit </p>
+            <div class="lessons__list">
+                <div class="lessons__list__icon">
+                    <img src="../images/next.png" alt="teacher icon">
+                </div>
+                <div class="lessons__list__description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit
+                </div>
+            </div>
+            <div class="lessons__list">
+                <div class="lessons__list__icon">
+                    <img src="../images/next.png" alt="teacher icon">
+                </div>
+                <div class="lessons__list__description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit
+                </div>
+            </div>
+            <div class="lessons__list">
+                <div class="lessons__list__icon">
+                    <img src="../images/next.png" alt="teacher icon">
+                </div>
+                <div class="lessons__list__description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit
+                </div>
+            </div>
         </div>
         <div class="lessons__image">
         </div>
@@ -112,13 +131,115 @@
         <div class="lessons2__text container--pall">
             <h2>Підготовка до ЗНО з англійської та тестів IELTS/TOEFL</h2>
             <p>Бажаєте підгототуватись до ЗНО з англійської або тестів IELTS/TOEFL. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime rem deleniti, cum nobis neque aliquam quaerat. </p>
-            <p> - Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
-            <p> - Lorem ipsum dolor sit amet consectetur adipisicing elit </p>
-            <p> - Lorem ipsum dolor sit amet consectetur adipisicing elit </p>
+            <div class="lessons2__list">
+                <div class="lessons2__list__icon">
+                    <img src="../images/next_p.png" alt="teacher icon">
+                </div>
+                <div class="lessons2__list__description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit
+                </div>
+            </div>
+            <div class="lessons2__list">
+                <div class="lessons2__list__icon">
+                    <img src="../images/next_p.png" alt="teacher icon">
+                </div>
+                <div class="lessons2__list__description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit
+                </div>
+            </div>
+            <div class="lessons2__list">
+                <div class="lessons2__list__icon">
+                    <img src="../images/next_p.png" alt="teacher icon">
+                </div>
+                <div class="lessons2__list__description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit
+                </div>
+            </div>
         </div>
         <div class="lessons2__image">
         </div>
     </section>
+    <section class="form-input container">
+        <form id="contact-form" action="" method="post" novalidate role="form">
+            <h1>Записатися на онлайн урок англійської мови</h1>
+            <div class="form__group">
+                <label for="name" class="seq">Ім'я</label>
+                <span id="name-error"></span>
+                <input type="text" name="name" class="form__control seq" id="name" placeholder="Повне ім'я" onkeyup="validateName()">
+            </div>
+            <div class="form__group">
+                <label for="telephone" class="seq">Телефон</label>
+                <span id="telephone-error"></span>
+                <input type="tel" name="telephone" class="form__control seq" id="telephone" placeholder="Телефон" onkeyup="validatePhone()">
+            </div>
+            <div class="form__group">
+                <label for="email" class="seq">Email</label>
+                <span id="email-error"></span>
+                <input type="email" name="email" class="form__control seq" id="email" aria-describedby="emailHelp" placeholder="Email" onkeyup="validateEmail()">
+            </div>
+            <button onclick="return ValidateForm()" type="submit" class="btn seq">Зв'яжіться з нами</button>
+            <span id="submit-error"></span>
+        </form>
+    </section>
+    <section class="steps container">
+        <div class="steps__image"></div>
+        <div class="steps__text container--pall">
+            <h2 id="start-learning">Як почати навчання в нашій школі?</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, repudiandae quod odio fugiat dolor sit cupiditate. Iste amet commodi id odio saepe, ex reiciendis provident aperiam iure rerum, quis nulla.</p>
+            <div class="steps__step">
+                <div class="steps__step__icon">
+                    <img src="../images/number-one.png" alt="teacher icon">
+                </div>
+                <div class="steps__step__description">
+                    Подзвони або заповни форму
+                </div>
+            </div>
+            <div class="steps__step">
+                <div class="steps__step__icon">
+                    <img src="../images/number-two.png" alt="teacher icon">
+                </div>
+                <div class="steps__step__description">
+                    Вчитель з Вами зв'яжеться і назначить час першого заняття
+                </div>
+            </div>
+            <div class="steps__step">
+                <div class="steps__step__icon">
+                    <img src="../images/number-three.png" alt="teacher icon">
+                </div>
+                <div class="steps__step__description">
+                    Вам допоможуть обрати програму навчання
+                </div>
+            </div>
+            <div class="steps__step">
+                <div class="steps__step__icon">
+                    <img src="../images/number-four.png" alt="teacher icon">
+                </div>
+                <div class="steps__step__description">
+                    Почни своє навчання в нашій школі
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contact container">
+        <div class="contact__text container--pall">
+            <h2 id="contact">Наші контакти</h2>
+            <p><span style="font-weight:600">Телефонуйте за номером:</span> +38 (055) 555 55 55 </p>
+            <p><span style="font-weight:600">Пишіть за адресою:</span> laanguagenook@gmail.com </p>
+            <p><span style="font-weight:600">Працюємо з</span> 9:00 до 20:00</p>
+        </div>
+    </section>
+    <div class="separator"></div>
+    <footer class="footer container container--pall">
+        <a href="/" class="footer__logo">
+            Language Nook
+        </a>
+        <div class="footer__links">
+            <a href="#about">Про нас</a>
+            <a href="#program">Програми</a>
+            <a href="#start-learning">Почніть online навчання</a>
+            <a href="#contact">Наші контакти</a>
+        </div>
+    </footer>
     <script src="../javascripts/script.js"></script>
 </body>
 </html>

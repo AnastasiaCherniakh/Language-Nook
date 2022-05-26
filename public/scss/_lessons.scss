@@ -61,4 +61,20 @@
             }
         }
     }
+
+    &__list {
+        text-align: left;
+        display: flex;
+        flex-wrap: wrap;
+        padding: rem(13);
+
+        &__icon {
+            flex: 0 0 10%;
+        }
+
+        &__description {
+            flex: 1;
+            margin: auto;
+        }
+}
 }

@@ -1,0 +1,48 @@
+@use 'globals' as *;
+
+.separator {
+    border-bottom: solid 1px;
+    position: relative;
+    margin: 30px 0px;
+    margin-right: 1.5rem;
+    margin-left: 1.5rem;
+}
+
+.footer {
+    padding-top: 1.0625rem;
+    padding-bottom: 1.0625rem;
+    margin-bottom: rem(30);
+    text-align: center;
+
+    @include breakpoint-up(medium) {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__logo {
+        width: rem(200);
+        height: rem(22);
+        font-size: rem(28);
+        margin-bottom: rem(30);
+    }
+
+    &__links {
+        a {
+            margin-top: rem(17);
+            padding: rem(10);
+            font-size: $mid-size;
+            font-weight: 600;
+            transition: color 0.2s ease-in-out;
+
+            &:not(:last-child) {
+                margin-right: 30px;
+
+            }
+
+            @include breakpoint-down(medium) {
+                display: block;
+            }
+        }
+    }
+}

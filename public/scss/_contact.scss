@@ -1,0 +1,22 @@
+@use 'globals' as *;
+
+.contact {
+    &__text {
+
+        h2 {
+            margin-bottom: rem(40);
+            text-decoration: underline;
+            -webkit-text-decoration-color: $purple;
+            text-decoration-color: $purple;
+            -webkit-text-decoration-style: wavy;
+            text-decoration-style: wavy;
+            -webkit-text-decoration-style: wavy;
+            text-decoration-style: wavy;
+        }
+
+        p {
+            line-height: 1.5rem;
+            font-size: rem(20);
+        }
+    }
+}
