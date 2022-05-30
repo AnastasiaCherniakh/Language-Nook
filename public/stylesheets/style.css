@@ -28,6 +28,7 @@ a:hover, a:visited:hover, a:active:hover {
 html {
   box-sizing: border-box;
   font-size: 100%;
+  scroll-behavior: smooth;
 }
 
 *, *::before, *::after {
@@ -353,16 +354,11 @@ button:hover, .button:hover {
   }
 }
 .advantage__item {
-  padding: 0.9375rem;
+  padding: 1.0625rem;
 }
 @media (min-width: 43.75rem) {
   .advantage__item {
     flex: 0 0 50%;
-  }
-}
-@media (min-width: 56.25rem) {
-  .advantage__item {
-    flex: 1;
   }
 }
 .advantage__icon {

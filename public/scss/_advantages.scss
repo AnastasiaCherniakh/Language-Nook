@@ -29,15 +29,13 @@
     }
 
     &__item {
-        padding: rem(15);
+        padding: rem(17);
 
         @include breakpoint-up(medium) {
             flex: 0 0 50%;
         }
 
-        @include breakpoint-up(large) {
-            flex: 1;
-        }
+
 
     }
 

@@ -14,7 +14,6 @@ app.route("/").get(function (req, res) {
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended:true}));
 
-
 app.post('/', (req,res)=> {
   const output=`
   <p>Новий студент Language Nook</p>
@@ -26,7 +25,7 @@ app.post('/', (req,res)=> {
   </ul>`;
 
 
-let smtpTrans = nodemailer.createTransport({
+let transporter = nodemailer.createTransport({
   service: 'Gmail',
   auth: {
     user: process.env.GMAIL_USER,
@@ -41,7 +40,7 @@ let mailOptions = {
   html: output
 };
 
-smtpTrans.sendMail(mailOptions,(error,info)=>{
+transporter.sendMail(mailOptions,(error,info)=>{
   if(error) {
     console.log(error);
     res.send(error);
