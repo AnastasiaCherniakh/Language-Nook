@@ -6,6 +6,7 @@
 html {
     box-sizing: border-box;
     font-size: 100%;
+    scroll-behavior: smooth;
 }
 
 *, *::before, *::after {
@@ -26,9 +27,9 @@ body {
     margin: 0 auto;
 
     &--pall {
-        padding-top: 2.5rem;
+        padding-top: 3.5rem;
         padding-right: 1.5rem;
-        padding-bottom: 2.5rem;
+        padding-bottom: 3.5rem;
         padding-left: 1.5rem;
 
         @include breakpoint-up(large) {
@@ -37,8 +38,8 @@ body {
         }
       }
       &--py {
-        padding-top: 2.5rem;
-        padding-bottom: 2.5rem;
+        padding-top: 3.5rem;
+        padding-bottom: 3.5rem;
 
         @include breakpoint-up(large) {
           padding-top: 5rem;
@@ -50,7 +51,7 @@ body {
         padding-left: 1.5rem;
       }
       &--pt {
-        padding-top: 2.5rem;
+        padding-top: 3.5rem;
 
         @include breakpoint-up(large) {
           padding-top: 6rem;
@@ -60,7 +61,7 @@ body {
         padding-right: 1.5rem;
       }
       &--pb {
-        padding-bottom: 2.5rem;
+        padding-bottom: 3.5rem;
 
         @include breakpoint-up(large) {
           padding-bottom: 5rem;
@@ -105,7 +106,7 @@ button, .button {
 
     &:hover {
         color: hsl(0, 0%, 100%);
-        box-shadow: 0 5px 15px hsla(275, 55%, 25%, 0.4);
+        box-shadow: 0 15px 15px hsla(275, 89%, 22%, 0.4);
     }
 
 }

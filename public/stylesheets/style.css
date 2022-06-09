@@ -28,6 +28,7 @@ a:hover, a:visited:hover, a:active:hover {
 html {
   box-sizing: border-box;
   font-size: 100%;
+  scroll-behavior: smooth;
 }
 
 *, *::before, *::after {
@@ -48,9 +49,9 @@ body {
   margin: 0 auto;
 }
 .container--pall {
-  padding-top: 2.5rem;
+  padding-top: 3.5rem;
   padding-right: 1.5rem;
-  padding-bottom: 2.5rem;
+  padding-bottom: 3.5rem;
   padding-left: 1.5rem;
 }
 @media (min-width: 56.25rem) {
@@ -60,8 +61,8 @@ body {
   }
 }
 .container--py {
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
 }
 @media (min-width: 56.25rem) {
   .container--py {
@@ -74,7 +75,7 @@ body {
   padding-left: 1.5rem;
 }
 .container--pt {
-  padding-top: 2.5rem;
+  padding-top: 3.5rem;
 }
 @media (min-width: 56.25rem) {
   .container--pt {
@@ -85,7 +86,7 @@ body {
   padding-right: 1.5rem;
 }
 .container--pb {
-  padding-bottom: 2.5rem;
+  padding-bottom: 3.5rem;
 }
 @media (min-width: 56.25rem) {
   .container--pb {
@@ -125,7 +126,7 @@ button, .button {
 }
 button:hover, .button:hover {
   color: hsl(0deg, 0%, 100%);
-  box-shadow: 0 5px 15px hsla(275deg, 55%, 25%, 0.4);
+  box-shadow: 0 15px 15px hsla(275deg, 89%, 22%, 0.4);
 }
 
 @media (max-width: 56.24875rem) {
@@ -160,7 +161,6 @@ button:hover, .button:hover {
   right: 0px;
   bottom: 0px;
   left: 0px;
-  background-image: linear-gradient(hsl(264deg, 38%, 44%), transparent);
 }
 .header nav {
   position: relative;
@@ -354,16 +354,11 @@ button:hover, .button:hover {
   }
 }
 .advantage__item {
-  padding: 0.9375rem;
+  padding: 1.0625rem;
 }
 @media (min-width: 43.75rem) {
   .advantage__item {
     flex: 0 0 50%;
-  }
-}
-@media (min-width: 56.25rem) {
-  .advantage__item {
-    flex: 1;
   }
 }
 .advantage__icon {
@@ -451,6 +446,19 @@ button:hover, .button:hover {
 .lessons__text p:not(:last-child) {
   margin-bottom: 2rem;
 }
+.lessons__list {
+  text-align: left;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0.8125rem;
+}
+.lessons__list__icon {
+  flex: 0 0 10%;
+}
+.lessons__list__description {
+  flex: 1;
+  margin: auto;
+}
 
 @media (min-width: 56.25rem) {
   .lessons2 {
@@ -465,6 +473,7 @@ button:hover, .button:hover {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 80%;
+  margin-bottom: 1.875rem;
 }
 @media (max-width: 43.74875rem) {
   .lessons2__image {
@@ -514,4 +523,230 @@ button:hover, .button:hover {
 }
 .lessons2__text p:not(:last-child) {
   margin-bottom: 2rem;
+}
+.lessons2__list {
+  text-align: left;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0.8125rem;
+}
+.lessons2__list__icon {
+  flex: 0 0 10%;
+}
+.lessons2__list__description {
+  flex: 1;
+  margin: auto;
+}
+
+.form-input {
+  background-color: hsl(0deg, 0%, 100%);
+  box-shadow: 20px 20px 40px hsl(52deg, 85%, 50%);
+  border-radius: 1em;
+  padding: 2em;
+  width: 21.875rem;
+  height: 29.375rem;
+  margin-bottom: 3.125rem;
+  position: relative;
+}
+@media (min-width: 43.75rem) {
+  .form-input {
+    width: 41.875rem;
+  }
+}
+
+h1 {
+  margin-bottom: 1.875rem;
+  line-height: 1;
+}
+
+.form__group {
+  display: flex;
+  justify-content: flex-end;
+}
+.form__group > label {
+  padding: 1.8125rem 1.125rem 1.8125rem 0;
+  flex: 1;
+  text-align: left;
+  position: relative;
+}
+.form__group > input {
+  flex: 2;
+  width: 1.875rem;
+  height: 2.5rem;
+  font-family: "Comfortaa", cursive;
+  font-weight: 600;
+  color: hsl(0deg, 0%, 0%);
+  border-radius: 10px;
+  border: 1px solid hsl(0deg, 0%, 50%);
+  margin: 1rem;
+  margin-bottom: 1.25rem;
+}
+.form__group > input:focus {
+  outline: none !important;
+  border: 1px solid hsl(264deg, 38%, 44%);
+  box-shadow: 0 0 10px hsl(264deg, 38%, 44%);
+}
+
+#name-error {
+  margin-bottom: 0.625rem;
+  color: hsl(0deg, 100%, 50%);
+  margin-bottom: 0;
+  font-size: 0.875rem;
+  position: absolute;
+  left: 39%;
+  font-weight: 600;
+}
+
+#telephone-error {
+  color: hsl(0deg, 100%, 50%);
+  margin-bottom: 0;
+  font-size: 0.875rem;
+  position: absolute;
+  left: 39%;
+  font-weight: 600;
+}
+
+#email-error {
+  color: hsl(0deg, 100%, 50%);
+  margin-bottom: 0;
+  font-size: 0.875rem;
+  position: absolute;
+  left: 39%;
+  font-weight: 600;
+}
+
+#submit-error {
+  color: hsl(120deg, 100%, 25%);
+  font-size: 0.875rem;
+  position: absolute;
+  font-weight: 600;
+  left: 33%;
+  bottom: 6%;
+}
+@media (max-width: 43.74875rem) {
+  #submit-error {
+    left: 22%;
+  }
+}
+
+.btn {
+  margin-top: 0.5rem;
+  margin-left: 2.5rem;
+}
+@media (min-width: 43.75rem) {
+  .btn {
+    margin-left: 11.4375rem;
+  }
+}
+
+@media (min-width: 56.25rem) {
+  .steps {
+    display: flex;
+    align-items: left;
+  }
+}
+.steps__image {
+  background-image: url("../images/undraw_teacher.svg");
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 70%;
+  min-height: 19rem;
+}
+@media (min-width: 43.75rem) {
+  .steps__image {
+    min-height: 36rem;
+  }
+}
+@media (min-width: 56.25rem) {
+  .steps__image {
+    flex: 2;
+    order: 1;
+    height: 31.25rem;
+    background-size: 80%;
+  }
+}
+.steps__text {
+  text-align: center;
+  line-height: 1.5rem;
+}
+@media (min-width: 56.25rem) {
+  .steps__text {
+    flex: 2;
+    order: 2;
+    text-align: left;
+  }
+}
+.steps__step {
+  text-align: left;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0.8125rem;
+}
+.steps__step__icon {
+  flex: 0 0 10%;
+}
+.steps__step__description {
+  flex: 1;
+  margin: auto;
+  line-height: 1.5rem;
+}
+
+.contact__text h2 {
+  margin-bottom: 2.5rem;
+  text-decoration: underline;
+  -webkit-text-decoration-color: hsl(264deg, 38%, 44%);
+  text-decoration-color: hsl(264deg, 38%, 44%);
+  -webkit-text-decoration-style: wavy;
+  text-decoration-style: wavy;
+  -webkit-text-decoration-style: wavy;
+  text-decoration-style: wavy;
+}
+.contact__text p {
+  line-height: 1.5rem;
+  font-size: 1.25rem;
+}
+
+.separator {
+  border-bottom: solid 1px;
+  position: relative;
+  margin: 30px 0px;
+  margin-right: 1.5rem;
+  margin-left: 1.5rem;
+}
+
+.footer {
+  padding-top: 1.0625rem;
+  padding-bottom: 1.0625rem;
+  margin-bottom: 1.875rem;
+  text-align: center;
+}
+@media (min-width: 43.75rem) {
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+.footer__logo {
+  width: 12.5rem;
+  height: 1.375rem;
+  font-size: 1.75rem;
+  margin-bottom: 1.875rem;
+}
+.footer__links a {
+  margin-top: 1.0625rem;
+  padding: 0.625rem;
+  font-size: 1.0625rem;
+  font-weight: 600;
+  transition: color 0.2s ease-in-out;
+}
+.footer__links a:not(:last-child) {
+  margin-right: 30px;
+}
+@media (max-width: 56.24875rem) {
+  .footer__links a {
+    display: block;
+  }
 }/*# sourceMappingURL=style.css.map */
