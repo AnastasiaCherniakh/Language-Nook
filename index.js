@@ -2,14 +2,17 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const nodemailer = require('nodemailer');
 const res = require('express/lib/response');
+const path = require('path');
 require("dotenv").config();
 
 const app = express();
 app.use(express.json());
 app.use(express.static('public'));
+
 app.route("/").get(function (req, res) {
-    res.sendFile(process.cwd() + "/public/views/index.html");
-  });
+  res.sendFile(process.cwd() + "/public/views/index.html");
+});
+
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended:true}));
